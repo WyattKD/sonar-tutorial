@@ -33,7 +33,7 @@ jobs:
           path: ~/.m2
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
-      - uses: SonarSource/sonarqube-auth-action@v1.2
+      - uses: SonarSource/sonarqube-auth-action@b372e2c2930aadfcc4f4399446da1e12772709ad # v1.2
         id: auth
       - name: Build and analyze
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
