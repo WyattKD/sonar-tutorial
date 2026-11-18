@@ -36,4 +36,4 @@ jobs:
       - uses: SonarSource/sonarqube-auth-action@v1.2
         id: auth
       - name: Build and analyze
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.organization=${{ steps.auth.outputs.organization }} -Dsonar.projectKey=${{ steps.auth.outputs.project-key }}
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar

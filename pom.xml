@@ -18,6 +18,8 @@
         <!-- Tells Sonar this is a Java project -->
         <sonar.language>java</sonar.language>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.organization>wyattkd</sonar.organization>
+        <sonar.projectKey>WyattKD_sonar-tutorial</sonar.projectKey>
         <!-- Tells Sonar where to find the bytecode -->
         <sonar.java.libraries>target/classes</sonar.java.libraries>
         <!-- Tells Sonar to exclude these directories for analysis -->
